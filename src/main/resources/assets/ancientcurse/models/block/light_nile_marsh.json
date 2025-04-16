@@ -1,0 +1,12 @@
+{
+  "parent": "minecraft:block/cube",
+  "textures": {
+    "particle": "ancientcurse:block/light_nile_marsh",
+    "down": "ancientcurse:block/light_nile_marsh",
+    "up": "ancientcurse:block/light_nile_marsh_top",
+    "north": "ancientcurse:block/light_nile_marsh",
+    "east": "ancientcurse:block/light_nile_marsh",
+    "south": "ancientcurse:block/light_nile_marsh",
+    "west": "ancientcurse:block/light_nile_marsh"
+  }
+} 

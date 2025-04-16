@@ -1,0 +1,21 @@
+{
+  "variants": {
+    "": [
+      {
+        "model": "ancientcurse:block/sunbaked_clay"
+      },
+      {
+        "model": "ancientcurse:block/sunbaked_clay",
+        "y": 90
+      },
+      {
+        "model": "ancientcurse:block/sunbaked_clay",
+        "y": 180
+      },
+      {
+        "model": "ancientcurse:block/sunbaked_clay",
+        "y": 270
+      }
+    ]
+  }
+}

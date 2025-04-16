@@ -1,0 +1,21 @@
+{
+  "variants": {
+    "": [
+      {
+        "model": "ancientcurse:block/pistia_stratiotes"
+      },
+      {
+        "model": "ancientcurse:block/pistia_stratiotes",
+        "y": 90
+      },
+      {
+        "model": "ancientcurse:block/pistia_stratiotes",
+        "y": 180
+      },
+      {
+        "model": "ancientcurse:block/pistia_stratiotes",
+        "y": 270
+      }
+    ]
+  }
+} 

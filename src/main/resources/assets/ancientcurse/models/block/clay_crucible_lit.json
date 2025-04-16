@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/orientable",
+  "textures": {
+    "top": "ancientcurse:block/clay_crucible_active",
+    "front": "ancientcurse:block/clay_crucible_sides",
+    "side": "ancientcurse:block/clay_crucible_sides"
+  }
+}

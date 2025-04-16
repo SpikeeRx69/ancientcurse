@@ -1,0 +1,21 @@
+{
+  "variants": {
+    "": [
+      {
+        "model": "ancientcurse:block/nile_mud"
+      },
+      {
+        "model": "ancientcurse:block/nile_mud",
+        "y": 90
+      },
+      {
+        "model": "ancientcurse:block/nile_mud",
+        "y": 180
+      },
+      {
+        "model": "ancientcurse:block/nile_mud",
+        "y": 270
+      }
+    ]
+  }
+}

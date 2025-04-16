@@ -1,0 +1,6 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "ancientcurse:block/polished_deshret_stone"
+  }
+}

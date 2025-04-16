@@ -1,0 +1,120 @@
+{
+  "documentation": "This file demonstrates how to register multiple features for a biome in the right order",
+  
+  "biome_features": [
+    {
+      "step": "raw_generation",
+      "features": []
+    },
+    {
+      "step": "lakes",
+      "features": []
+    },
+    {
+      "step": "local_modifications",
+      "features": []
+    },
+    {
+      "step": "underground_structures",
+      "features": []
+    },
+    {
+      "step": "surface_structures",
+      "features": []
+    },
+    {
+      "step": "strongholds",
+      "features": []
+    },
+    {
+      "step": "underground_ores",
+      "features": [
+        "ancientcurse:placed_alabaster_ore",
+        "ancientcurse:placed_limestone_deposit"
+      ]
+    },
+    {
+      "step": "underground_decoration",
+      "features": []
+    },
+    {
+      "step": "fluid_springs",
+      "features": []
+    },
+    {
+      "step": "vegetal_decoration",
+      "features": [
+        "ancientcurse:placed_papyrus_reed",
+        "ancientcurse:placed_date_palm_tree",
+        "ancientcurse:placed_lotus_flower",
+        "ancientcurse:placed_papyrus_patch"
+      ]
+    },
+    {
+      "step": "top_layer_modification",
+      "features": []
+    }
+  ],
+  
+  "feature_registration": {
+    "configured_features": {
+      "patch_papyrus_reed": {
+        "type": "minecraft:random_patch",
+        "config": {
+          "feature": {
+            "type": "minecraft:simple_block",
+            "config": {
+              "to_place": {
+                "type": "minecraft:simple_state_provider",
+                "state": {
+                  "Name": "ancientcurse:papyrus_reed",
+                  "Properties": {
+                    "age": "0"
+                  }
+                }
+              }
+            }
+          },
+          "tries": 24,
+          "xz_spread": 7,
+          "y_spread": 3,
+          "feature_chance": 0.5,
+          "project": true,
+          "need_water": false
+        }
+      }
+    },
+    
+    "placed_features": {
+      "placed_papyrus_reed": {
+        "feature": "ancientcurse:patch_papyrus_reed",
+        "placement": [
+          {
+            "type": "minecraft:count",
+            "count": {
+              "type": "minecraft:uniform",
+              "value": {
+                "min_inclusive": 5,
+                "max_inclusive": 15
+              }
+            }
+          },
+          {
+            "type": "minecraft:in_square"
+          },
+          {
+            "type": "minecraft:heightmap",
+            "heightmap": "WORLD_SURFACE_WG"
+          },
+          {
+            "type": "minecraft:surface_water_depth_filter",
+            "max_water_depth": 3
+          },
+          {
+            "type": "minecraft:biome"
+          }
+        ]
+      }
+    }
+  }
+} 

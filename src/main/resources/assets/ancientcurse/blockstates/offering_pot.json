@@ -1,0 +1,21 @@
+{
+  "variants": {
+    "": [
+      {
+        "model": "ancientcurse:block/offering_pot"
+      },
+      {
+        "model": "ancientcurse:block/offering_pot",
+        "y": 90
+      },
+      {
+        "model": "ancientcurse:block/offering_pot",
+        "y": 180
+      },
+      {
+        "model": "ancientcurse:block/offering_pot",
+        "y": 270
+      }
+    ]
+  }
+} 

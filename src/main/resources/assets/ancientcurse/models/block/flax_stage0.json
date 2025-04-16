@@ -1,0 +1,7 @@
+{
+  "parent": "block/crop",
+  "textures": {
+    "crop": "ancientcurse:block/flax_growth_0"
+  },
+  "render_type": "minecraft:cutout"
+} 

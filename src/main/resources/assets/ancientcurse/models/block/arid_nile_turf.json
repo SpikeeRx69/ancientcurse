@@ -1,0 +1,12 @@
+{
+  "parent": "minecraft:block/cube",
+  "textures": {
+    "particle": "ancientcurse:block/arid_nile_turf",
+    "down": "ancientcurse:block/arid_nile_turf",
+    "up": "ancientcurse:block/arid_nile_turf_top",
+    "north": "ancientcurse:block/arid_nile_turf",
+    "east": "ancientcurse:block/arid_nile_turf",
+    "south": "ancientcurse:block/arid_nile_turf",
+    "west": "ancientcurse:block/arid_nile_turf"
+  }
+} 

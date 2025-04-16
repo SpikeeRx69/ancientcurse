@@ -1,0 +1,37 @@
+{
+  "_comment": "DIMENSION CONFIGURATION FOR THE NILE RIVER - Available blocks: nile_river_sand, fertile_nile_silt, dry_nile_silt, tilled_nile_silt, riverbed, riverbed_moss, nile_mud, gold_flaked_river_bed, riverbed_clay, papyrus_reed, dead_papyrus_reed, dwarf_papyrus, nile_river_grass, nile_river_thin_grass, egyptian_spinach, flax, barley, lotus_flower_pad, algae, pistia_stratiotes, sycamore_fig_log, date_palm_log",
+  "type": "ancientcurse:ancient_curse",
+  "generator": {
+    "type": "minecraft:noise",
+    "biome_source": {
+      "type": "minecraft:multi_noise",
+      "biomes": [
+        {
+          "biome": "ancientcurse:ancient_desert",
+          "parameters": {
+            "temperature": 1.0,
+            "humidity": 0.0,
+            "continentalness": [-1.2, 1.2],
+            "erosion": [-1.0, 0.6],
+            "weirdness": [-1.0, 1.0],
+            "depth": 0.0,
+            "offset": 0.0
+          }
+        },
+        {
+          "biome": "ancientcurse:nile_river",
+          "parameters": {
+            "temperature": 0.8,
+            "humidity": 0.8,
+            "continentalness": [-0.2, 0.2],
+            "erosion": [0.6, 1.0],
+            "weirdness": [-0.3, 0.3],
+            "depth": -0.3,
+            "offset": 0.0
+          }
+        }
+      ]
+    },
+    "settings": "ancientcurse:nile_river"
+  }
+} 

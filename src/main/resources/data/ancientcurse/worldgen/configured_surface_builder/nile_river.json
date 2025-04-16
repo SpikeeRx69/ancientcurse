@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:default",
+  "config": {
+    "top_material": {
+      "Name": "ancientcurse:nile_river_sand"
+    },
+    "under_material": {
+      "Name": "ancientcurse:nile_mud"
+    },
+    "underwater_material": {
+      "Name": "ancientcurse:riverbed"
+    }
+  }
+}

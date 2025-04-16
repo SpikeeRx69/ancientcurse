@@ -1,0 +1,21 @@
+{
+  "parent": "minecraft:block/block",
+  "textures": {
+    "rock": "minecraft:block/stone",
+    "particle": "minecraft:block/stone"
+  },
+  "elements": [
+    {
+      "from": [6, 0, 6],
+      "to": [10, 2, 10],
+      "faces": {
+        "north": {"uv": [6, 14, 10, 16], "texture": "#rock", "tintindex": 0},
+        "east": {"uv": [6, 14, 10, 16], "texture": "#rock", "tintindex": 0},
+        "south": {"uv": [6, 14, 10, 16], "texture": "#rock", "tintindex": 0},
+        "west": {"uv": [6, 14, 10, 16], "texture": "#rock", "tintindex": 0},
+        "up": {"uv": [6, 6, 10, 10], "texture": "#rock", "tintindex": 0},
+        "down": {"uv": [6, 6, 10, 10], "texture": "#rock", "tintindex": 0}
+      }
+    }
+  ]
+}

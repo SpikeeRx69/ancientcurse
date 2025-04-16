@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "###",
+    "#S#",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "minecraft:gold_nugget"
+    },
+    "S": {
+      "item": "ancientcurse:sycamore_fig"
+    }
+  },
+  "result": {
+    "item": "ancientcurse:golden_sycamore_fig",
+    "count": 1
+  }
+}

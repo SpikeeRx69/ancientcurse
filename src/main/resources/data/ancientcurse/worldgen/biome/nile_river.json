@@ -1,0 +1,136 @@
+{
+
+  "temperature": 0.9,
+  "downfall": 0.5,
+  "has_precipitation": true,
+  "temperature_modifier": "none",
+  "effects": {
+    "sky_color": 7254527,
+    "fog_color": 12638463,
+    "water_color": 4445678,
+    "water_fog_color": 270131,
+    "grass_color": 11985483,
+    "foliage_color": 10387789,
+    "ambient_sound": {
+      "sound": "minecraft:ambient.underwater.loop",
+      "tick_chance": 0.01
+    },
+    "mood_sound": {
+      "sound": "minecraft:ambient.cave",
+      "tick_delay": 6000,
+      "block_search_extent": 8,
+      "offset": 2.0
+    },
+    "additions_sound": {
+      "sound": "minecraft:ambient.underwater.loop.additions",
+      "tick_chance": 0.0111
+    },
+    "music": {
+      "sound": "minecraft:music.overworld.jungle",
+      "min_delay": 12000,
+      "max_delay": 24000
+    }
+  },
+  "spawners": {
+    "ambient": [],
+    "creature": [
+      {
+        "type": "minecraft:frog",
+        "weight": 15,
+        "minCount": 2,
+        "maxCount": 5
+      },
+      {
+        "type": "minecraft:camel",
+        "weight": 5,
+        "minCount": 1,
+        "maxCount": 3
+      }
+    ],
+    "misc": [],
+    "monster": [
+      {
+        "type": "minecraft:drowned",
+        "weight": 50,
+        "minCount": 1,
+        "maxCount": 2
+      },
+      {
+        "type": "minecraft:husk",
+        "weight": 30,
+        "minCount": 1,
+        "maxCount": 2
+      }
+    ],
+    "underground_water_creature": [],
+    "water_ambient": [
+      {
+        "type": "minecraft:tropical_fish",
+        "weight": 25,
+        "minCount": 8,
+        "maxCount": 12
+      }
+    ],
+    "water_creature": []
+  },
+  "spawn_costs": {},
+  "carvers": {
+    "air": [
+      "minecraft:cave",
+      "minecraft:cave_extra_underground"
+    ]
+  },
+  "features": [
+    [
+      "ancientcurse:nile_riverbed_placement",
+      "ancientcurse:riverbed_patches",
+      "ancientcurse:patch_riverbed_clay",
+      "ancientcurse:patch_scattered_riverbed_moss",
+      "ancientcurse:patch_gold_flaked_river_bed"
+    ],
+    [
+      "ancientcurse:patch_papyrus_reed",
+      "ancientcurse:patch_papyrus",
+      "ancientcurse:patch_lotus_flower_pad",
+      "ancientcurse:patch_pistia_stratiotes",
+      "ancientcurse:patch_algae"
+    ],
+    [
+      "ancientcurse:patch_nile_river_grass",
+      "ancientcurse:patch_nile_river_thin_grass",
+      "ancientcurse:patch_dwarf_papyrus",
+      "ancientcurse:patch_egyptian_spinach"
+    ],
+    [
+      "ancientcurse:sycamore_fig_tree",
+      "ancientcurse:date_palm_tree"
+    ],
+    [
+      "minecraft:patch_sugar_cane",
+      "minecraft:patch_waterlily",
+      "minecraft:warm_ocean_vegetation"
+    ],
+    [
+      "minecraft:freeze_top_layer"
+    ]
+  ],
+  "terrain_settings": {
+    "amplitude": 0.0,
+    "sampling": {
+      "xz_scale": 0.0,
+      "y_scale": 0.0,
+      "xz_factor": 0.0,
+      "y_factor": 0.0
+    },
+    "top_slide": {
+      "target": 0.0,
+      "size": 0,
+      "offset": 0
+    },
+    "bottom_slide": {
+      "target": 0,
+      "size": 0,
+      "offset": 0
+    }
+  }
+}

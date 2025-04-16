@@ -1,0 +1,12 @@
+{
+  "parent": "minecraft:block/cube",
+  "textures": {
+    "particle": "ancientcurse:block/reed_mat",
+    "down": "ancientcurse:block/reed_mat",
+    "up": "ancientcurse:block/reed_mat_top",
+    "north": "ancientcurse:block/reed_mat",
+    "east": "ancientcurse:block/reed_mat",
+    "south": "ancientcurse:block/reed_mat",
+    "west": "ancientcurse:block/reed_mat"
+  }
+} 

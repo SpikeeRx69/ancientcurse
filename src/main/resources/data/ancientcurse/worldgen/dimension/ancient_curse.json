@@ -1,0 +1,11 @@
+{
+  "type": "ancientcurse:ancient_curse",
+  "generator": {
+    "type": "minecraft:noise",
+    "biome_source": {
+      "type": "minecraft:fixed",
+      "biome": "ancientcurse:nile_river"
+    },
+    "settings": "minecraft:overworld"
+  }
+} 

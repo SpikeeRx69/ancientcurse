@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "": [
+      { "model": "ancientcurse:block/nile_river_thin_grass" },
+      { "model": "ancientcurse:block/nile_river_thin_grass", "y": 90 },
+      { "model": "ancientcurse:block/nile_river_thin_grass", "y": 180 },
+      { "model": "ancientcurse:block/nile_river_thin_grass", "y": 270 }
+    ]
+  }
+} 

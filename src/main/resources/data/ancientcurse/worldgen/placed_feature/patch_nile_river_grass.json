@@ -1,0 +1,73 @@
+{
+  "type": "minecraft:placed_feature",
+  "feature": "ancientcurse:patch_nile_river_grass",
+  "placement": [
+    {
+      "type": "minecraft:count",
+      "count": 4
+    },
+    {
+      "type": "minecraft:in_square"
+    },
+    {
+      "type": "minecraft:height_range",
+      "height": {
+        "type": "minecraft:uniform",
+        "min_inclusive": {
+          "absolute": 62
+        },
+        "max_inclusive": {
+          "absolute": 80
+        }
+      }
+    },
+    {
+      "type": "minecraft:block_predicate_filter",
+      "predicate": {
+        "type": "minecraft:matching_blocks",
+        "blocks": [
+          "ancientcurse:fertile_nile_silt",
+          "ancientcurse:nile_river_sand",
+          "ancientcurse:nile_mud"
+        ]
+      }
+    },
+    {
+      "type": "minecraft:block_predicate_filter",
+      "predicate": {
+        "type": "minecraft:all_of",
+        "predicates": [
+          {
+            "type": "minecraft:would_survive",
+            "state": {
+              "Name": "ancientcurse:nile_river_grass"
+            }
+          },
+          {
+            "type": "minecraft:has_sturdy_face",
+            "direction": "down"
+          },
+          {
+            "type": "minecraft:inside_world_bounds"
+          }
+        ]
+      }
+    },
+    {
+      "type": "minecraft:block_predicate_filter",
+      "predicate": {
+        "type": "minecraft:not",
+        "predicate": {
+          "type": "minecraft:matching_fluids",
+          "fluids": [
+            "minecraft:water",
+            "minecraft:flowing_water"
+          ]
+        }
+      }
+    },
+    {
+      "type": "minecraft:biome"
+    }
+  ]
+} 

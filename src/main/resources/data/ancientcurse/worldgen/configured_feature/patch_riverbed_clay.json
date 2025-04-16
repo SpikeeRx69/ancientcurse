@@ -1,0 +1,30 @@
+{
+  "type": "minecraft:disk",
+  "config": {
+    "half_height": 2,
+    "radius": {
+      "type": "minecraft:uniform",
+      "value": {
+        "min_inclusive": 3,
+        "max_inclusive": 6
+      }
+    },
+    "target": {
+      "type": "minecraft:matching_blocks",
+      "blocks": [
+        "ancientcurse:riverbed",
+        "minecraft:sand",
+        "minecraft:gravel"
+      ]
+    },
+    "state_provider": {
+      "fallback": {
+        "type": "minecraft:simple_state_provider",
+        "state": {
+          "Name": "ancientcurse:riverbed_clay"
+        }
+      },
+      "rules": []
+    }
+  }
+} 

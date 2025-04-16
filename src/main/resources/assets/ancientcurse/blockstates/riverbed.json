@@ -1,0 +1,21 @@
+{
+  "variants": {
+    "": [
+      {
+        "model": "ancientcurse:block/riverbed"
+      },
+      {
+        "model": "ancientcurse:block/riverbed",
+        "y": 90
+      },
+      {
+        "model": "ancientcurse:block/riverbed",
+        "y": 180
+      },
+      {
+        "model": "ancientcurse:block/riverbed",
+        "y": 270
+      }
+    ]
+  }
+} 

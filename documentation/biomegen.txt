@@ -1,0 +1,112 @@
+🏜 1. Golden Dunes
+Biome Type: Hot, arid, and sandy with rolling dunes.
+Base Blocks:
+Surface: Sand (minecraft:sand), Red Sand (minecraft:red_sand).
+Subsurface: Sandstone (minecraft:sandstone), Smooth Sandstone (minecraft:smooth_sandstone).
+Cave Layers: Sandstone (minecraft:sandstone), occasionally exposed Terracotta (minecraft:terracotta).
+Terrain Generation:
+Large rolling dunes that shift elevation between 3-6 blocks in height, mimicking the natural wind-formed dunes of the Sahara.
+Gentle slope noise variation to create natural rises and dips, avoiding the flatness of vanilla deserts.
+Vegetation & Features:
+Cacti (minecraft:cactus) - Generates in small clusters of 1-3 blocks (30% spawn chance).
+Dead Bushes (minecraft:dead_bush) - Scattered sparsely across the biome (50% spawn chance).
+Sandstone Archways - Naturally generated arches made of sandstone blocks (minecraft:sandstone), appearing in groups of 2-3, resembling wind-carved rock formations.
+Structures:
+Rare ruined obelisks (similar to ruined Nether portals but using sandstone and red terracotta).
+Buried structures - Sand-covered desert wells (minecraft:desert_well) that sometimes generate only partially visible.
+Mobs:
+Husks (minecraft:husk) - 70% nighttime spawn rate.
+Stray Camels - Camels (minecraft:camel) spawn in small groups near patches of sandstone.
+
+🌿 2. Oasis Biome
+Biome Type: Lush, fertile land surrounded by desert.
+Base Blocks:
+Surface: Grass (minecraft:grass_block), Sand (minecraft:sand).
+Subsurface: Dirt (minecraft:dirt), Sandstone (minecraft:sandstone).
+Water Features: Clear, still water (minecraft:water).
+Terrain Generation:
+Primarily flat with a slight depression in the center where water gathers.
+A natural circular pond (3-6 blocks deep) at the center of the biome.
+Vegetation & Features:
+Acacia Trees (minecraft:acacia_log, minecraft:acacia_leaves) - Acts as palm trees, growing in groups near the water source.
+Tall Grass (minecraft:tall_grass) - Covers 40% of the ground.
+Sugar Cane (minecraft:sugar_cane) - Grows along the water's edge to resemble papyrus.
+Lily Pads (minecraft:lily_pad) - Found floating in small groups.
+Structures:
+Small abandoned huts made from acacia wood and sandstone, resembling ancient villages.
+Mobs:
+Camels (minecraft:camel) - Spawn near water.
+Fish (minecraft:tropical_fish, minecraft:salmon) - Populate the water pools.
+
+🌊 3. Nile Floodplains
+Biome Type: Fertile lands flanking a river.
+Base Blocks:
+Surface: Grass (minecraft:grass_block), Coarse Dirt (minecraft:coarse_dirt), Sand (minecraft:sand).
+Subsurface: Dirt (minecraft:dirt), Clay (minecraft:clay).
+Water Features: Flowing river water (minecraft:water).
+Terrain Generation:
+Flat and expansive, occasionally interrupted by gentle riverbanks.
+Wide, slow-moving river winding through the biome.
+Vegetation & Features:
+Acacia Trees (minecraft:acacia_log, minecraft:acacia_leaves) - Sparse, growing near water sources.
+Tall Grass (minecraft:tall_grass) - Covers much of the land.
+Sugar Cane (minecraft:sugar_cane) - Grows densely along the water, resembling papyrus fields.
+Structures:
+Occasional farm huts made of acacia planks and hay bales, inspired by ancient Egyptian farming settlements.
+Mobs:
+Camels (minecraft:camel) - Small herds roam the land.
+Frogs (minecraft:frog) - Found near the water, representing the amphibians that thrived in the Nile.
+Crocodiles (via reskinned alligator mobs) - Implemented via modding later.
+
+⛰ 4. Valley of Kings
+Biome Type: Rugged desert canyon with towering cliffs.
+Base Blocks:
+Surface: Sandstone (minecraft:sandstone), Red Sandstone (minecraft:red_sandstone).
+Subsurface: Smooth Sandstone (minecraft:smooth_sandstone), Hardened Clay (minecraft:terracotta).
+Cave Layers: Deeper sandstone layers transitioning into bedrock.
+Terrain Generation:
+Tall sandstone cliffs (Y = 90-110), forming a canyon-like terrain.
+Narrow winding pathways between cliffs leading to hidden tomb entrances.
+Vegetation & Features:
+Dead Bushes (minecraft:dead_bush) - Very sparse.
+Scattered Boulders - Formed from smooth sandstone.
+Structures:
+Naturally spawning tombs built into cliffsides (desert temples repurposed to generate within canyon walls).
+Mobs:
+Husks (minecraft:husk) - 80% of nighttime spawns.
+Skeletons (minecraft:skeleton) - Spawning inside tombs.
+
+🔥 5. Desert Volcanic Fields
+Biome Type: Barren volcanic desert.
+Base Blocks:
+Surface: Blackstone (minecraft:blackstone), Basalt (minecraft:basalt).
+Subsurface: Magma (minecraft:magma_block), Lava (minecraft:lava).
+Terrain Generation:
+Flat but broken by random jagged basalt formations.
+Occasional small lava pools scattered across the landscape.
+Vegetation & Features:
+No plant life except occasional dead bushes.
+Volcanic rock formations made from blackstone and basalt.
+Structures:
+Ancient shrines resembling Nether Ruins, using Blackstone bricks and Redstone torches for an eerie feel.
+Mobs:
+Blazes (minecraft:blaze) - Rarely spawn in open areas.
+Magma Cubes (minecraft:magma_cube) - Spawn around lava pools.
+
+🌄 6. Mirage Sands
+Biome Type: Illusionary desert.
+Base Blocks:
+Surface: Sand (minecraft:sand), Red Sand (minecraft:red_sand).
+Subsurface: Sandstone (minecraft:sandstone).
+Terrain Generation:
+Large, flat stretches of desert occasionally interrupted by small sandstone mesas.
+Vegetation & Features:
+Cacti (minecraft:cactus) - Occasionally generating in clusters.
+Mirage Pools (illusionary water sources) - Generate with blue glass instead of actual water.
+Structures:
+Scattered ruins built from sandstone slabs and walls, often half-buried in the sand.
+Mobs:
+Husks (minecraft:husk) - The dominant mob at night.
+
+Final Notes:
+Each of these biomes follows vanilla-compatible generation rules using Fabric 1.20.1. They use only existing blocks, mobs, and terrain settings while providing immersive Egyptian themes.

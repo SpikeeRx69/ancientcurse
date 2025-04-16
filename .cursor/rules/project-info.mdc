@@ -1,0 +1,12 @@
+---
+description: 
+globs: 
+alwaysApply: true
+---
+
+# Always search best practices for Minecraft fabric 1.20.1 
+
+- Reference 
+- Always search best practices for Minecraft fabric 1.20.1 
+- If you are switching methods for approaching a goal, please clean up and remove old approaches code. 
+- Always run the command .\gradlew runClient after making changes
