@@ -1,0 +1,67 @@
+# Gradle
+.gradle/
+build/
+gradle.zip
+temp/gradle.zip
+
+# IDE
+.idea/
+*.iml
+.vscode/
+*.launch
+.settings/
+.metadata
+bin/
+tmp/
+*.tmp
+*.bak
+*.swp
+
+# Minecraft
+run/
+logs/
+.mixin.out/
+
+# OS specific
+.DS_Store
+Thumbs.db
+*.db
+
+# Temp files
+temp/
+
+# Disabled mods
+disabled_mods/
+temp_disabled_mods/
+
+# eclipse
+
+*.launch
+
+# idea
+
+*.iml
+*.ipr
+*.iws
+
+# vscode
+
+.settings/
+.vscode/
+.classpath
+.project
+
+# macos
+
+*.DS_Store
+
+# fabric
+
+.fabric/
+
+# java
+
+hs_err_*.log
+replay_*.log
+*.hprof
+*.jfr 

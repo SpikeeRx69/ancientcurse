@@ -1,0 +1,12 @@
+{
+  "parent": "minecraft:block/cube",
+  "textures": {
+    "particle": "ancientcurse:block/spotted_marsh",
+    "down": "ancientcurse:block/spotted_marsh",
+    "up": "ancientcurse:block/spotted_marsh_top",
+    "north": "ancientcurse:block/spotted_marsh",
+    "east": "ancientcurse:block/spotted_marsh",
+    "south": "ancientcurse:block/spotted_marsh",
+    "west": "ancientcurse:block/spotted_marsh"
+  }
+} 

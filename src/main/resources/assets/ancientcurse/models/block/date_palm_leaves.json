@@ -1,0 +1,7 @@
+{
+  "parent": "block/leaves",
+  "textures": {
+    "all": "ancientcurse:block/date_palm_leaves"
+  },
+  "render_type": "minecraft:cutout"
+}

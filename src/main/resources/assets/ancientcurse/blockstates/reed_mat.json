@@ -1,0 +1,21 @@
+{
+  "variants": {
+    "": [
+      {
+        "model": "ancientcurse:block/reed_mat"
+      },
+      {
+        "model": "ancientcurse:block/reed_mat",
+        "y": 90
+      },
+      {
+        "model": "ancientcurse:block/reed_mat",
+        "y": 180
+      },
+      {
+        "model": "ancientcurse:block/reed_mat",
+        "y": 270
+      }
+    ]
+  }
+} 

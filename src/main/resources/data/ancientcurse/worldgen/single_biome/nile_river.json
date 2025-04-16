@@ -1,0 +1,9 @@
+{
+  "biome": "ancientcurse:nile_river",
+  "settings": {
+    "features": true,
+    "lakes": false,
+    "replace_current_music": true,
+    "noise": "ancientcurse:nile_river"
+  }
+} 

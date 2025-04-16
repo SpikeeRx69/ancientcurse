@@ -1,0 +1,34 @@
+{
+  "type": "minecraft:simple_block",
+  "config": {
+    "to_place": {
+      "type": "minecraft:weighted_state_provider",
+      "entries": [
+        {
+          "weight": 60,
+          "data": {
+            "Name": "ancientcurse:riverbed"
+          }
+        },
+        {
+          "weight": 30,
+          "data": {
+            "Name": "ancientcurse:nile_mud"
+          }
+        },
+        {
+          "weight": 8,
+          "data": {
+            "Name": "ancientcurse:riverbed_moss"
+          }
+        },
+        {
+          "weight": 2,
+          "data": {
+            "Name": "ancientcurse:gold_flaked_river_bed"
+          }
+        }
+      ]
+    }
+  }
+}

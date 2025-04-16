@@ -1,0 +1,12 @@
+{
+  "parent": "minecraft:block/cube",
+  "textures": {
+    "particle": "ancientcurse:block/gold_flaked_riverbed",
+    "down": "ancientcurse:block/gold_flaked_riverbed",
+    "up": "ancientcurse:block/gold_flaked_riverbed_top",
+    "north": "ancientcurse:block/gold_flaked_riverbed",
+    "east": "ancientcurse:block/gold_flaked_riverbed",
+    "south": "ancientcurse:block/gold_flaked_riverbed",
+    "west": "ancientcurse:block/gold_flaked_riverbed"
+  }
+}

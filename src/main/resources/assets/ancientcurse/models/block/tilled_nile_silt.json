@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/template_farmland",
+  "textures": {
+    "particle": "ancientcurse:block/fertile_nile_silt",
+    "dirt": "ancientcurse:block/fertile_nile_silt",
+    "top": "ancientcurse:block/tilled_nile_silt"
+  }
+} 

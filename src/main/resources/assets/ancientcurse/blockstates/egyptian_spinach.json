@@ -1,0 +1,21 @@
+{
+  "variants": {
+    "": [
+      {
+        "model": "ancientcurse:block/egyptian_spinach"
+      },
+      {
+        "model": "ancientcurse:block/egyptian_spinach",
+        "y": 90
+      },
+      {
+        "model": "ancientcurse:block/egyptian_spinach",
+        "y": 180
+      },
+      {
+        "model": "ancientcurse:block/egyptian_spinach",
+        "y": 270
+      }
+    ]
+  }
+} 

@@ -1,0 +1,21 @@
+{
+  "variants": {
+    "": [
+      {
+        "model": "ancientcurse:block/dwarf_papyrus"
+      },
+      {
+        "model": "ancientcurse:block/dwarf_papyrus",
+        "y": 90
+      },
+      {
+        "model": "ancientcurse:block/dwarf_papyrus",
+        "y": 180
+      },
+      {
+        "model": "ancientcurse:block/dwarf_papyrus",
+        "y": 270
+      }
+    ]
+  }
+} 

@@ -1,0 +1,17 @@
+{
+  "parent": "minecraft:block/block",
+  "textures": {
+    "particle": "ancientcurse:block/algae",
+    "texture": "ancientcurse:block/algae"
+  },
+  "elements": [
+    {
+      "from": [0, 0, 0],
+      "to": [16, 0.2, 16],
+      "faces": {
+        "up": {"texture": "#texture", "tintindex": 0},
+        "down": {"texture": "#texture", "tintindex": 0}
+      }
+    }
+  ]
+} 

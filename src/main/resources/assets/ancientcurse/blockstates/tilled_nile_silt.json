@@ -1,0 +1,12 @@
+{
+  "variants": {
+    "moisture=0": { "model": "ancientcurse:block/tilled_nile_silt" },
+    "moisture=1": { "model": "ancientcurse:block/tilled_nile_silt" },
+    "moisture=2": { "model": "ancientcurse:block/tilled_nile_silt" },
+    "moisture=3": { "model": "ancientcurse:block/tilled_nile_silt" },
+    "moisture=4": { "model": "ancientcurse:block/tilled_nile_silt" },
+    "moisture=5": { "model": "ancientcurse:block/tilled_nile_silt" },
+    "moisture=6": { "model": "ancientcurse:block/tilled_nile_silt" },
+    "moisture=7": { "model": "ancientcurse:block/tilled_nile_silt_moist" }
+  }
+} 

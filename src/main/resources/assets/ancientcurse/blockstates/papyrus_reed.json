@@ -1,0 +1,6 @@
+{
+  "variants": {
+    "top=true": { "model": "ancientcurse:block/papyrus_reed_top" },
+    "top=false": { "model": "ancientcurse:block/papyrus_reed" }
+  }
+} 

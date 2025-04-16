@@ -1,0 +1,12 @@
+{
+  "parent": "minecraft:block/cube",
+  "textures": {
+    "particle": "ancientcurse:block/mud_flat",
+    "down": "ancientcurse:block/mud_flat",
+    "up": "ancientcurse:block/mud_flat_top",
+    "north": "ancientcurse:block/mud_flat",
+    "east": "ancientcurse:block/mud_flat",
+    "south": "ancientcurse:block/mud_flat",
+    "west": "ancientcurse:block/mud_flat"
+  }
+}

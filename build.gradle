@@ -1,0 +1,102 @@
+plugins {
+    id 'fabric-loom' version '1.3.3'
+    id 'maven-publish'
+}
+
+version = '1.0.0'
+group = 'com.ancientcurse'
+archivesBaseName = 'ancientcurse'
+
+repositories {
+    mavenCentral()
+    maven { url "https://maven.fabricmc.net/" }
+    maven { url 'https://maven.shedaniel.me/' }
+    maven { url 'https://dl.cloudsmith.io/public/geckolib3/geckolib/maven/' }
+    maven { url 'https://maven.terraformersmc.com/releases/' }
+    maven { url "https://maven.minecraftforge.net/" }
+    maven { url "https://plugins.gradle.org/m2/" }
+}
+
+configurations.all {
+    resolutionStrategy {
+        force 'org.jetbrains:annotations:23.0.0'
+        force 'com.google.code.findbugs:jsr305:3.0.2'
+    }
+}
+
+dependencies {
+    // Minecraft and Fabric
+    minecraft "com.mojang:minecraft:1.20.1"
+    mappings "net.fabricmc:yarn:1.20.1+build.9:v2"
+    modImplementation "net.fabricmc:fabric-loader:0.14.21"
+    
+    // Fabric API
+    modImplementation "net.fabricmc.fabric-api:fabric-api:0.87.0+1.20.1"
+    include "net.fabricmc.fabric-api:fabric-api:0.87.0+1.20.1"
+    
+    // GeckoLib
+    modImplementation "software.bernie.geckolib:geckolib-fabric-1.20.1:4.2.3"
+    include "software.bernie.geckolib:geckolib-fabric-1.20.1:4.2.3"
+    
+    // Mixin annotation processor
+    annotationProcessor "net.fabricmc:fabric-mixin-compile-extensions:0.6.0"
+    
+    // Include all transitive dependencies
+    include "com.google.code.findbugs:jsr305:3.0.2"
+    include "org.jetbrains:annotations:23.0.0"
+}
+
+processResources {
+    inputs.property "version", project.version
+    
+    filesMatching("fabric.mod.json") {
+        expand "version": project.version
+    }
+}
+
+tasks.withType(JavaCompile).configureEach {
+    it.options.encoding = "UTF-8"
+    it.options.release = 17
+}
+
+java {
+    withSourcesJar()
+}
+
+jar {
+    from("LICENSE") {
+        rename { "${it}_${project.archivesBaseName}" }
+    }
+}
+
+// Configure Minecraft development environment
+loom {
+    accessWidenerPath = file("src/main/resources/ancientcurse.accesswidener")
+
+    runs {
+        // Configure client run configuration
+        client {
+            // Set your Minecraft username to use your skin
+            property 'fabric.client.username', 'Joshemve'
+        }
+        // Add this configuration for data generation
+        datagenClient {
+            client()
+            name "Data Generation"
+            vmArg "-Dfabric-api.datagen=true"
+            vmArg "-Dfabric-api.datagen.output-dir=" + file("src/main/generated").absolutePath
+            // Optional: Specify mods to generate data for if needed
+            // vmArg "-Dfabric-api.datagen.modid=ancientcurse"
+            runDir "build/datagen"
+        }
+    }
+}
+
+// Configure the maven publication
+publishing {
+    publications {
+        mavenJava(MavenPublication) {
+            from components.java
+        }
+    }
+}

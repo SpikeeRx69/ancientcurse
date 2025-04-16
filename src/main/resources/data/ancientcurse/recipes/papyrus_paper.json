@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "ancientcurse:papyrus_reed"
+    }
+  },
+  "result": {
+    "item": "ancientcurse:papyrus_paper",
+    "count": 3
+  }
+}

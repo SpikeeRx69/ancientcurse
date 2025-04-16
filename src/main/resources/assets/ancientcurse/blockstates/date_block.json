@@ -1,0 +1,18 @@
+{
+  "variants": {
+    "age=0,facing=north": { "model": "ancientcurse:block/date_block", "y": 180, "textures": { "1": "ancientcurse:block/date_block_stage0", "particle": "ancientcurse:block/date_block_stage0" } },
+    "age=0,facing=east": { "model": "ancientcurse:block/date_block", "y": 270, "textures": { "1": "ancientcurse:block/date_block_stage0", "particle": "ancientcurse:block/date_block_stage0" } },
+    "age=0,facing=south": { "model": "ancientcurse:block/date_block", "y": 0, "textures": { "1": "ancientcurse:block/date_block_stage0", "particle": "ancientcurse:block/date_block_stage0" } },
+    "age=0,facing=west": { "model": "ancientcurse:block/date_block", "y": 90, "textures": { "1": "ancientcurse:block/date_block_stage0", "particle": "ancientcurse:block/date_block_stage0" } },
+    
+    "age=1,facing=north": { "model": "ancientcurse:block/date_block", "y": 180, "textures": { "1": "ancientcurse:block/date_block_stage1", "particle": "ancientcurse:block/date_block_stage1" } },
+    "age=1,facing=east": { "model": "ancientcurse:block/date_block", "y": 270, "textures": { "1": "ancientcurse:block/date_block_stage1", "particle": "ancientcurse:block/date_block_stage1" } },
+    "age=1,facing=south": { "model": "ancientcurse:block/date_block", "y": 0, "textures": { "1": "ancientcurse:block/date_block_stage1", "particle": "ancientcurse:block/date_block_stage1" } },
+    "age=1,facing=west": { "model": "ancientcurse:block/date_block", "y": 90, "textures": { "1": "ancientcurse:block/date_block_stage1", "particle": "ancientcurse:block/date_block_stage1" } },
+    
+    "age=2,facing=north": { "model": "ancientcurse:block/date_block", "y": 180, "textures": { "1": "ancientcurse:block/date_block_stage2", "particle": "ancientcurse:block/date_block_stage2" } },
+    "age=2,facing=east": { "model": "ancientcurse:block/date_block", "y": 270, "textures": { "1": "ancientcurse:block/date_block_stage2", "particle": "ancientcurse:block/date_block_stage2" } },
+    "age=2,facing=south": { "model": "ancientcurse:block/date_block", "y": 0, "textures": { "1": "ancientcurse:block/date_block_stage2", "particle": "ancientcurse:block/date_block_stage2" } },
+    "age=2,facing=west": { "model": "ancientcurse:block/date_block", "y": 90, "textures": { "1": "ancientcurse:block/date_block_stage2", "particle": "ancientcurse:block/date_block_stage2" } }
+  }
+}

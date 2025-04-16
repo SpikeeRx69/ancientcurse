@@ -1,0 +1,19 @@
+{
+  "structures": [
+    {
+      "structure": "ancientcurse:pyramid",
+      "weight": 1
+    }
+  ],
+  "placement": {
+    "type": "minecraft:random_spread",
+    "spacing": 45,
+    "separation": 15,
+    "salt": 19372412,
+    "locate_offset": [0, 0],
+    "exclusion_zone": {
+      "other_set": "minecraft:villages",
+      "chunk_count": 10
+    }
+  }
+}

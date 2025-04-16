@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "open=true": {
+      "model": "ancientcurse:block/lotus_flower_pad_open"
+    },
+    "open=false": {
+      "model": "ancientcurse:block/lotus_flower_pad_closed"
+    }
+  }
+}

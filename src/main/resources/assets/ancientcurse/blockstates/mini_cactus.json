@@ -1,0 +1,21 @@
+{
+  "variants": {
+    "": [
+      {
+        "model": "ancientcurse:block/mini_cactus"
+      },
+      {
+        "model": "ancientcurse:block/mini_cactus",
+        "y": 90
+      },
+      {
+        "model": "ancientcurse:block/mini_cactus",
+        "y": 180
+      },
+      {
+        "model": "ancientcurse:block/mini_cactus",
+        "y": 270
+      }
+    ]
+  }
+} 

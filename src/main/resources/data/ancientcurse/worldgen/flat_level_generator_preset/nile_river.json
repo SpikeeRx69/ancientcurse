@@ -1,0 +1,27 @@
+{
+  "display": "ancientcurse:nile_river_sand",
+  "settings": {
+    "biome": "ancientcurse:nile_river",
+    "features": false,
+    "lakes": false,
+    "layers": [
+      {
+        "block": "minecraft:bedrock",
+        "height": 1
+      },
+      {
+        "block": "ancientcurse:nile_river_sand",
+        "height": 59
+      },
+      {
+        "block": "ancientcurse:nile_mud",
+        "height": 3
+      },
+      {
+        "block": "ancientcurse:fertile_nile_silt",
+        "height": 1
+      }
+    ],
+    "structure_overrides": []
+  }
+} 

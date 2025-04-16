@@ -1,0 +1,21 @@
+{
+  "variants": {
+    "": [
+      {
+        "model": "ancientcurse:block/arid_nile_turf"
+      },
+      {
+        "model": "ancientcurse:block/arid_nile_turf",
+        "y": 90
+      },
+      {
+        "model": "ancientcurse:block/arid_nile_turf",
+        "y": 180
+      },
+      {
+        "model": "ancientcurse:block/arid_nile_turf",
+        "y": 270
+      }
+    ]
+  }
+} 

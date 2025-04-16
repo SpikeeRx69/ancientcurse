@@ -1,0 +1,21 @@
+{
+  "variants": {
+    "": [
+      {
+        "model": "ancientcurse:block/light_dead_fern"
+      },
+      {
+        "model": "ancientcurse:block/light_dead_fern",
+        "y": 90
+      },
+      {
+        "model": "ancientcurse:block/light_dead_fern",
+        "y": 180
+      },
+      {
+        "model": "ancientcurse:block/light_dead_fern",
+        "y": 270
+      }
+    ]
+  }
+} 

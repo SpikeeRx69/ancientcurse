@@ -1,0 +1,27 @@
+{
+  "doc": "This is an example of a configured feature for papyrus reed plants. Configured features define WHAT a feature is.",
+  
+  "type": "minecraft:random_patch",
+  "config": {
+    "feature": {
+      "type": "minecraft:simple_block",
+      "config": {
+        "to_place": {
+          "type": "minecraft:simple_state_provider",
+          "state": {
+            "Name": "ancientcurse:papyrus_reed",
+            "Properties": {
+              "age": "0"
+            }
+          }
+        }
+      }
+    },
+    "tries": 24,
+    "xz_spread": 7,
+    "y_spread": 3,
+    "project": true,
+    "need_water": true,
+    "fail_on_water": false
+  }
+} 

@@ -1,0 +1,21 @@
+{
+  "variants": {
+    "": [
+      {
+        "model": "ancientcurse:block/obelisk_stone"
+      },
+      {
+        "model": "ancientcurse:block/obelisk_stone",
+        "y": 90
+      },
+      {
+        "model": "ancientcurse:block/obelisk_stone",
+        "y": 180
+      },
+      {
+        "model": "ancientcurse:block/obelisk_stone",
+        "y": 270
+      }
+    ]
+  }
+}

@@ -1,0 +1,61 @@
+- Date Palm Trees
+Items:
+ - Date Palm Log
+ - Date Palm Leaves
+ - Date Block
+ - Sekhem Date #Gives Fire Resistance for 10 seconds and 5 Hunger
+ Worldgen:
+ - ancientcurse:date_palm_tree_0 #Contains 3 Date Fruits
+ - ancientcurse:date_palm_tree_1 #Normal Tall Straight Palm Tree
+- Sycamore Trees
+ - Sycamore Leaves
+ - Sycamore Fig
+ - Sycamore Fig Log
+ - Golden Sycamore Fig #Gives Golden Apple Effect for 10 seconds and 5 Hunger
+
+## 
+Mouldy bread medicine:
+The ancient Egyptians used mouldy bread to treat infections, 
+showcasing an early understanding of the potential therapeutic properties within everyday ingredients 
+
+##
+1. Cursed Tombs & Traps
+Pharaohs' tombs were intricately designed with deadly traps to prevent tomb raiders.
+Mod Idea: Implement hidden chambers, booby traps (falling sand blocks, poison darts), or curse triggers (mobs spawning when chests are opened).
+
+2. The Book of the Dead
+A scroll containing spells guiding the deceased safely to the afterlife.
+Mod Idea: Players can collect scroll fragments to craft spells that grant temporary buffs or protect against curses.
+3. Mummification Rituals
+Egyptians believed mummification preserved the body for the afterlife.
+Mod Idea: Introduce mummified mobs (like mummy villagers or pharaoh bosses) with unique animations and abilities (slowing the player or causing blindness).
+4. Animal Guardians
+Animals like cats, crocodiles, jackals, and falcons symbolized protection or punishment.
+Mod Idea: Animal-themed mobs (like guardian jackals or spectral crocodiles) guarding treasures or cursed locations.
+5. Hieroglyphic Magic
+Egyptians believed hieroglyphs were powerful magical symbols.
+Mod Idea: Hieroglyph blocks that activate mechanisms or puzzles when correctly arranged, or grant players special enchantments.
+6. The Nile & Plagues
+The Nile River was crucial for survival; disruptions (droughts, floods, plagues) were devastating.
+Mod Idea: Curse effects causing random environmental disasters (water turning red, mobs dying suddenly, plagues spreading diseases).
+7. Amulets & Talismans
+Egyptians wore protective amulets for luck, strength, or protection from evil spirits.
+Mod Idea: Players can craft amulets granting special resistances (anti-curse amulet, protection from undead).
+8. Judgment in the Afterlife
+Souls were judged against the feather of Ma'at (truth) to determine afterlife fate.
+Mod Idea: A boss battle involving an entity representing judgment, weighing player actions (karma system) that affects outcomes.
+9. Solar & Lunar Mythology
+Ra (Sun God) sailed across the sky, battling the serpent Apophis each night.
+Mod Idea: Day-night mechanics where curses become stronger or mobs spawn aggressively at night, requiring protective artifacts.
+10. The Curse of Tutankhamun
+Real-life historical belief that disturbing King Tut’s tomb unleashed misfortune.
+Mod Idea: A powerful Pharaoh's tomb that, once opened, initiates challenging events or curses players must break by performing rituals or tasks.
+11. Sacred Architecture
+Temples like Karnak and Luxor were built precisely aligned with astronomical events.
+Mod Idea: Structures that activate during specific moon phases or alignments, revealing hidden treasures or triggering special events.
+12. Shabti Statues
+Miniature statues placed in tombs believed to serve the dead in the afterlife.
+Mod Idea: Collectible Shabti statues that can summon temporary servants or allies, aiding players against enemies.
+13. Divine Retribution
+Egyptian gods punished those who defiled sacred spaces.
+Mod Idea: Deities (Ra, Anubis, Isis) inflicting punishments or curses if players disrespect temples or loot excessively without performing proper rites.

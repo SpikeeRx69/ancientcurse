@@ -1,0 +1,12 @@
+{
+  "parent": "minecraft:block/cube",
+  "textures": {
+    "particle": "ancientcurse:block/heavy_marsh",
+    "down": "ancientcurse:block/heavy_marsh",
+    "up": "ancientcurse:block/heavy_marsh_top",
+    "north": "ancientcurse:block/heavy_marsh",
+    "east": "ancientcurse:block/heavy_marsh",
+    "south": "ancientcurse:block/heavy_marsh",
+    "west": "ancientcurse:block/heavy_marsh"
+  }
+}

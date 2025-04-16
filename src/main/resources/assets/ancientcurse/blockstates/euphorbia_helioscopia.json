@@ -1,0 +1,21 @@
+{
+  "variants": {
+    "": [
+      {
+        "model": "ancientcurse:block/euphorbia_helioscopia"
+      },
+      {
+        "model": "ancientcurse:block/euphorbia_helioscopia",
+        "y": 90
+      },
+      {
+        "model": "ancientcurse:block/euphorbia_helioscopia",
+        "y": 180
+      },
+      {
+        "model": "ancientcurse:block/euphorbia_helioscopia",
+        "y": 270
+      }
+    ]
+  }
+} 

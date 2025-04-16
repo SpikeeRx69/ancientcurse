@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cross",
+  "textures": {
+    "cross": "ancientcurse:block/dead_papyrus_reed"
+  }
+} 

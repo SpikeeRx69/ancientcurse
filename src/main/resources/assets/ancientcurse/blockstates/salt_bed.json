@@ -1,0 +1,21 @@
+{
+  "variants": {
+    "": [
+      {
+        "model": "ancientcurse:block/salt_bed"
+      },
+      {
+        "model": "ancientcurse:block/salt_bed",
+        "y": 90
+      },
+      {
+        "model": "ancientcurse:block/salt_bed",
+        "y": 180
+      },
+      {
+        "model": "ancientcurse:block/salt_bed",
+        "y": 270
+      }
+    ]
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "variants": {
+    "": [
+      {
+        "model": "ancientcurse:block/dry_nile_silt"
+      },
+      {
+        "model": "ancientcurse:block/dry_nile_silt",
+        "y": 90
+      },
+      {
+        "model": "ancientcurse:block/dry_nile_silt",
+        "y": 180
+      },
+      {
+        "model": "ancientcurse:block/dry_nile_silt",
+        "y": 270
+      }
+    ]
+  }
+} 
