@@ -1,9 +1,38 @@
-# gradle
-
+# Gradle
 .gradle/
 build/
-out/
-classes/
+gradle.zip
+temp/gradle.zip
+
+# IDE
+.idea/
+*.iml
+.vscode/
+*.launch
+.settings/
+.metadata
+bin/
+tmp/
+*.tmp
+*.bak
+*.swp
+
+# Minecraft
+run/
+logs/
+.mixin.out/
+
+# OS specific
+.DS_Store
+Thumbs.db
+*.db
+
+# Temp files
+temp/
+
+# Disabled mods
+disabled_mods/
+temp_disabled_mods/
 
 # eclipse
 
@@ -11,7 +40,6 @@ classes/
 
 # idea
 
-.idea/
 *.iml
 *.ipr
 *.iws
@@ -20,7 +48,6 @@ classes/
 
 .settings/
 .vscode/
-bin/
 .classpath
 .project
 
@@ -30,7 +57,6 @@ bin/
 
 # fabric
 
-run/
 .fabric/
 
 # java
