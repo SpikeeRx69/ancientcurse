@@ -1,6 +1,8 @@
 package com.ancientcurse;
 
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroup;
+import net.minecraft.item.Item;
+import net.minecraft.item.ItemConvertible;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemStack;
 import net.minecraft.registry.Registries;
@@ -14,102 +16,123 @@ public class ModItemGroup {
         new Identifier(AncientCurse.MOD_ID, "main"),
         FabricItemGroup.builder()
             .displayName(Text.translatable("itemgroup.ancientcurse"))
-            .icon(() -> new ItemStack(ModItems.STAFF_OF_RA))
+            .icon(() -> new ItemStack(ModItems.STAFF_OF_RA, 1))
             .entries((displayContext, entries) -> {
                 // Tools and Items
-                entries.add(new ItemStack(ModItems.STAFF_OF_RA));
+                safeAdd(entries, ModItems.STAFF_OF_RA);
                 
                 // Food items
-                entries.add(new ItemStack(ModItems.SYCAMORE_FIG));
-                entries.add(new ItemStack(ModItems.GOLDEN_SYCAMORE_FIG));
-                entries.add(new ItemStack(ModItems.SEKHEM_DATE));
-                entries.add(new ItemStack(ModItems.SPINACH));
+                safeAdd(entries, ModItems.SYCAMORE_FIG);
+                safeAdd(entries, ModItems.GOLDEN_SYCAMORE_FIG);
+                safeAdd(entries, ModItems.SEKHEM_DATE);
+                safeAdd(entries, ModItems.SPINACH);
                 
                 // Seeds are automatically added by AliasedBlockItem
                 // Do not add them again here to avoid duplicates
                 
                 // Harvested Crops / Fibers
-                entries.add(new ItemStack(ModItems.BARLEY));
-                entries.add(new ItemStack(ModItems.FLAX_FIBER));
-                entries.add(new ItemStack(ModItems.PAPYRUS_PAPER));
-                entries.add(new ItemStack(ModItems.RAW_RIVERBED_CLAY));
-                entries.add(new ItemStack(ModItems.LOTUS_FLOWER));
-                entries.add(new ItemStack(ModItems.ROPE));
+                safeAdd(entries, ModItems.BARLEY);
+                safeAdd(entries, ModItems.FLAX_FIBER);
+                safeAdd(entries, ModItems.PAPYRUS_PAPER);
+                safeAdd(entries, ModItems.RAW_RIVERBED_CLAY);
+                safeAdd(entries, ModItems.LOTUS_FLOWER);
+                safeAdd(entries, ModItems.ROPE);
                 
                 // Tree blocks
-                entries.add(new ItemStack(ModBlocks.SYCAMORE_FIG_LOG));
-                entries.add(new ItemStack(ModBlocks.SYCAMORE_LEAVES));
-                entries.add(new ItemStack(ModBlocks.DATE_PALM_LOG));
-                entries.add(new ItemStack(ModBlocks.DATE_PALM_LEAVES));
+                safeAdd(entries, ModBlocks.SYCAMORE_FIG_LOG);
+                safeAdd(entries, ModBlocks.SYCAMORE_LEAVES);
+                safeAdd(entries, ModBlocks.DATE_PALM_LOG);
+                safeAdd(entries, ModBlocks.DATE_PALM_LEAVES);
                 
                 // Terrain blocks
-                entries.add(new ItemStack(ModBlocks.SMOOTH_SAND));
-                entries.add(new ItemStack(ModBlocks.NILE_RIVER_SAND));
-                entries.add(new ItemStack(ModBlocks.FERTILE_NILE_SILT));
-                entries.add(new ItemStack(ModBlocks.DRY_NILE_SILT));
-                entries.add(new ItemStack(ModBlocks.TILLED_NILE_SILT));
-                entries.add(new ItemStack(ModBlocks.ARID_NILE_TURF));
+                safeAdd(entries, ModBlocks.SMOOTH_SAND);
+                safeAdd(entries, ModBlocks.NILE_RIVER_SAND);
+                safeAdd(entries, ModBlocks.FERTILE_NILE_SILT);
+                safeAdd(entries, ModBlocks.DRY_NILE_SILT);
+                safeAdd(entries, ModBlocks.TILLED_NILE_SILT);
+                safeAdd(entries, ModBlocks.ARID_NILE_TURF);
                 
                 // Nile environment blocks
-                entries.add(new ItemStack(ModBlocks.RIVERBED));
-                entries.add(new ItemStack(ModBlocks.NILE_MUD));
-                entries.add(new ItemStack(ModBlocks.GOLD_FLAKED_RIVER_BED));
-                entries.add(new ItemStack(ModBlocks.MUD_FLAT));
-                entries.add(new ItemStack(ModBlocks.SALT_BED));
+                safeAdd(entries, ModBlocks.RIVERBED);
+                safeAdd(entries, ModBlocks.NILE_MUD);
+                safeAdd(entries, ModBlocks.GOLD_FLAKED_RIVER_BED);
+                safeAdd(entries, ModBlocks.MUD_FLAT);
+                safeAdd(entries, ModBlocks.SALT_BED);
                 
                 // Building materials
-                entries.add(new ItemStack(ModBlocks.DRIED_REED_THATCH));
-                entries.add(new ItemStack(ModBlocks.RIVERBED_CLAY));
-                entries.add(new ItemStack(ModBlocks.OBELISK_STONE));
-                entries.add(new ItemStack(ModBlocks.MUD_BRICK));
-                entries.add(new ItemStack(ModBlocks.SUNBAKED_CLAY));
-                entries.add(new ItemStack(ModBlocks.OFFERING_POT));
+                safeAdd(entries, ModBlocks.DRIED_REED_THATCH);
+                safeAdd(entries, ModBlocks.RIVERBED_CLAY);
+                safeAdd(entries, ModBlocks.OBELISK_STONE);
+                safeAdd(entries, ModBlocks.MUD_BRICK);
+                safeAdd(entries, ModBlocks.SUNBAKED_CLAY);
+                safeAdd(entries, ModBlocks.OFFERING_POT);
                 
                 // Plants and vegetation
-                entries.add(new ItemStack(ModBlocks.LIGHT_NILE_MARSH));
-                entries.add(new ItemStack(ModBlocks.HEAVY_MARSH));
-                entries.add(new ItemStack(ModBlocks.RIVERBED_MOSS));
-                entries.add(new ItemStack(ModBlocks.ALGAE));
-                entries.add(new ItemStack(ModBlocks.REED_MAT));
-                entries.add(new ItemStack(ModBlocks.SPOTTED_MARSH));
-                entries.add(new ItemStack(ModBlocks.DEAD_PAPYRUS_REED));
-                entries.add(new ItemStack(ModBlocks.PAPYRUS_REED));
-                entries.add(new ItemStack(ModBlocks.DWARF_PAPYRUS));
-                entries.add(new ItemStack(ModBlocks.EGYPTIAN_SPINACH));
-                entries.add(new ItemStack(ModBlocks.EUPHORBIA_HELIOSCOPIA));
-                entries.add(new ItemStack(ModBlocks.LIGHT_DEAD_FERN));
-                entries.add(new ItemStack(ModBlocks.MINI_CACTUS));
-                entries.add(new ItemStack(ModBlocks.PISTIA_STRATIOTES));
-                entries.add(new ItemStack(ModBlocks.LOTUS_FLOWER_PAD));
+                safeAdd(entries, ModBlocks.LIGHT_NILE_MARSH);
+                safeAdd(entries, ModBlocks.HEAVY_MARSH);
+                safeAdd(entries, ModBlocks.RIVERBED_MOSS);
+                safeAdd(entries, ModBlocks.ALGAE);
+                safeAdd(entries, ModBlocks.REED_MAT);
+                safeAdd(entries, ModBlocks.SPOTTED_MARSH);
+                safeAdd(entries, ModBlocks.DEAD_PAPYRUS_REED);
+                safeAdd(entries, ModBlocks.PAPYRUS_REED);
+                safeAdd(entries, ModBlocks.DWARF_PAPYRUS);
+                safeAdd(entries, ModBlocks.EGYPTIAN_SPINACH);
+                safeAdd(entries, ModBlocks.EUPHORBIA_HELIOSCOPIA);
+                safeAdd(entries, ModBlocks.LIGHT_DEAD_FERN);
+                safeAdd(entries, ModBlocks.MINI_CACTUS);
+                safeAdd(entries, ModBlocks.PISTIA_STRATIOTES);
+                safeAdd(entries, ModBlocks.LOTUS_FLOWER_PAD);
                 
                 // Crops (Blocks themselves, for placing if needed)
-                entries.add(new ItemStack(ModBlocks.FLAX));
-                entries.add(new ItemStack(ModBlocks.BARLEY));
+                safeAdd(entries, ModBlocks.FLAX);
+                safeAdd(entries, ModBlocks.BARLEY);
                 
                 // Nile River Grass blocks
-                entries.add(new ItemStack(ModBlocks.NILE_RIVER_GRASS));
-                entries.add(new ItemStack(ModBlocks.NILE_RIVER_THIN_GRASS));
+                safeAdd(entries, ModBlocks.NILE_RIVER_GRASS);
                 
                 // Deshret blocks (Egyptian red desert materials)
-                entries.add(new ItemStack(ModBlocks.DESHRET_SAND));
-                entries.add(new ItemStack(ModBlocks.DESHRET_WAVY_SAND));
-                entries.add(new ItemStack(ModBlocks.DESHRET_SANDSTONE));
-                entries.add(new ItemStack(ModBlocks.DESHRET_BRICK));
-                entries.add(new ItemStack(ModBlocks.DESHRET_COBBLESTONE));
-                entries.add(new ItemStack(ModBlocks.HARDENED_DESHRET_STONE));
-                entries.add(new ItemStack(ModBlocks.POLISHED_DESHRET_STONE));
-                entries.add(new ItemStack(ModBlocks.SPOTTED_DESHRET));
+                safeAdd(entries, ModBlocks.DESHRET_SAND);
+                safeAdd(entries, ModBlocks.DESHRET_WAVY_SAND);
+                safeAdd(entries, ModBlocks.DESHRET_SANDSTONE);
+                safeAdd(entries, ModBlocks.DESHRET_BRICK);
+                safeAdd(entries, ModBlocks.DESHRET_COBBLESTONE);
+                safeAdd(entries, ModBlocks.HARDENED_DESHRET_STONE);
+                safeAdd(entries, ModBlocks.POLISHED_DESHRET_STONE);
+                safeAdd(entries, ModBlocks.SPOTTED_DESHRET);
                 
                 // Rock blocks
-                entries.add(new ItemStack(ModBlocks.SMALL_ROCK));
-                entries.add(new ItemStack(ModBlocks.MEDIUM_ROCK));
-                entries.add(new ItemStack(ModBlocks.LARGE_ROCK));
+                safeAdd(entries, ModBlocks.SMALL_ROCK);
+                safeAdd(entries, ModBlocks.MEDIUM_ROCK);
+                safeAdd(entries, ModBlocks.LARGE_ROCK);
                 
-                // Skip BLACK_* blocks as they don't have textures yet
-                // These are mentioned in the errors but not properly registered
+                // Black blocks - explicitly create new ItemStacks with count=1
+                safeAdd(entries, ModBlocks.BLACK_COBBLESTONE);
+                safeAdd(entries, ModBlocks.BLACK_DUST);
+                safeAdd(entries, ModBlocks.BLACK_SAND);
+                safeAdd(entries, ModBlocks.BLACK_STONE);
+                safeAdd(entries, ModBlocks.BLACKSTONE_BRICK);
+                safeAdd(entries, ModBlocks.HARDENED_BLACK_STONE);
+                safeAdd(entries, ModBlocks.WIND_SWEPT_BLACKSTONE);
             })
             .build()
     );
+
+    /**
+     * A utility method to safely add items to creative tab entries with stack size exactly 1
+     */
+    private static void safeAdd(ItemGroup.Entries entries, ItemConvertible item) {
+        if (item != null) {
+            try {
+                // Create a new ItemStack with exactly 1 item
+                ItemStack stack = new ItemStack(item);
+                stack.setCount(1);
+                entries.add(stack);
+            } catch (Exception e) {
+                AncientCurse.LOGGER.error("Failed to add item to creative tab: " + item, e);
+            }
+        }
+    }
 
     public static void registerItemGroups() {
         AncientCurse.LOGGER.info("Registering item groups for " + AncientCurse.MOD_ID);

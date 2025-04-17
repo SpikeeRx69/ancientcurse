@@ -27,8 +27,10 @@ import com.ancientcurse.block.LightDeadFernBlock;
 import com.ancientcurse.block.MiniCactusBlock;
 import com.ancientcurse.block.PistiaStratiotesBlock;
 import com.ancientcurse.block.OfferingPotBlock;
+import com.ancientcurse.block.NileRiverTallGrassBlock;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
+import net.minecraft.block.AbstractBlock;
 import net.minecraft.block.Block;
 import net.minecraft.block.Blocks;
 import net.minecraft.block.MapColor;
@@ -367,10 +369,10 @@ public class ModBlocks {
             .notSolid()
     );
     
-    // Nile River Thin Grass - sparser vegetation for drier areas near the Nile
-    public static final Block NILE_RIVER_THIN_GRASS = new PlantBlock(
+    // Nile River Tall Grass - taller variant of grass for the Nile riverbanks
+    public static final Block NILE_RIVER_TALL_GRASS = new NileRiverTallGrassBlock(
         FabricBlockSettings.create()
-            .mapColor(MapColor.PALE_GREEN)
+            .mapColor(MapColor.DARK_GREEN)
             .strength(0.5f)
             .sounds(BlockSoundGroup.GRASS)
             .nonOpaque()
@@ -829,11 +831,11 @@ public class ModBlocks {
             NILE_RIVER_GRASS
         );
         
-        // Register Nile River Thin Grass
+        // Register Nile River Tall Grass
         Registry.register(
             Registries.BLOCK,
-            new Identifier(AncientCurse.MOD_ID, "nile_river_thin_grass"),
-            NILE_RIVER_THIN_GRASS
+            new Identifier(AncientCurse.MOD_ID, "nile_river_tall_grass"),
+            NILE_RIVER_TALL_GRASS
         );
         
         // Register Deshret Brick
@@ -1059,7 +1061,7 @@ public class ModBlocks {
         registerBlockItem(FLAX, ModItemGroup.ANCIENT_CURSE);
         registerBlockItem(LOTUS_FLOWER_PAD, ModItemGroup.ANCIENT_CURSE);
         registerBlockItem(NILE_RIVER_GRASS, ModItemGroup.ANCIENT_CURSE);
-        registerBlockItem(NILE_RIVER_THIN_GRASS, ModItemGroup.ANCIENT_CURSE);
+        registerBlockItem(NILE_RIVER_TALL_GRASS, ModItemGroup.ANCIENT_CURSE);
         registerBlockItem(DESHRET_BRICK, ModItemGroup.ANCIENT_CURSE);
         registerBlockItem(DESHRET_COBBLESTONE, ModItemGroup.ANCIENT_CURSE);
         registerBlockItem(DESHRET_SAND, ModItemGroup.ANCIENT_CURSE);
@@ -1080,9 +1082,14 @@ public class ModBlocks {
         registerBlockItem(OFFERING_POT, ModItemGroup.ANCIENT_CURSE);
         registerBlockItem(CLAY_CRUCIBLE, ModItemGroup.ANCIENT_CURSE);
         
-        // Black stone variants: Skip these for now since they don't have textures
-        // Do not register them at all until textures are ready
-        // DO NOT register with air ID
+        // Register black stone variants
+        registerBlockItem(BLACK_COBBLESTONE, ModItemGroup.ANCIENT_CURSE);
+        registerBlockItem(BLACK_DUST, ModItemGroup.ANCIENT_CURSE);
+        registerBlockItem(BLACK_SAND, ModItemGroup.ANCIENT_CURSE);
+        registerBlockItem(BLACK_STONE, ModItemGroup.ANCIENT_CURSE);
+        registerBlockItem(BLACKSTONE_BRICK, ModItemGroup.ANCIENT_CURSE);
+        registerBlockItem(HARDENED_BLACK_STONE, ModItemGroup.ANCIENT_CURSE);
+        registerBlockItem(WIND_SWEPT_BLACKSTONE, ModItemGroup.ANCIENT_CURSE);
         
         // We don't register a BlockItem for DATE_BLOCK since it should only drop the Sekhem Date item
     }

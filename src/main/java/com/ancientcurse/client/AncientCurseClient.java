@@ -30,7 +30,7 @@ public class AncientCurseClient implements ClientModInitializer {
      */
     private void registerRenderLayers() {
         // Register cutout render layers for blocks with transparency
-        BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.NILE_RIVER_THIN_GRASS, RenderLayer.getCutout());
+        BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.NILE_RIVER_TALL_GRASS, RenderLayer.getCutout());
         
         // Add other vegetation blocks with transparency here as needed
         BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.NILE_RIVER_GRASS, RenderLayer.getCutout());

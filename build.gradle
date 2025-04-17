@@ -35,8 +35,8 @@ dependencies {
     include "net.fabricmc.fabric-api:fabric-api:0.87.0+1.20.1"
     
     // GeckoLib
-    modImplementation "software.bernie.geckolib:geckolib-fabric-1.20.1:4.2.3"
-    include "software.bernie.geckolib:geckolib-fabric-1.20.1:4.2.3"
+    modImplementation 'software.bernie.geckolib:geckolib-fabric-1.20.1:4.2.3'
+    include 'software.bernie.geckolib:geckolib-fabric-1.20.1:4.2.3'
     
     // Mixin annotation processor
     annotationProcessor "net.fabricmc:fabric-mixin-compile-extensions:0.6.0"

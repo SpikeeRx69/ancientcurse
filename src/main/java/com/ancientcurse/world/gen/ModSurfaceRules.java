@@ -23,7 +23,7 @@ public class ModSurfaceRules {
     private static final MaterialRule RIVERBED_MOSS = block(ModBlocks.RIVERBED_MOSS);
     private static final MaterialRule NILE_RIVER_SAND = block(ModBlocks.NILE_RIVER_SAND);
     private static final MaterialRule NILE_RIVER_GRASS = block(ModBlocks.NILE_RIVER_GRASS);
-    private static final MaterialRule NILE_RIVER_THIN_GRASS = block(ModBlocks.NILE_RIVER_THIN_GRASS);
+    private static final MaterialRule NILE_RIVER_TALL_GRASS = block(ModBlocks.NILE_RIVER_TALL_GRASS);
     
     // Biome conditions
     private static final MaterialCondition ANCIENT_DESERT_CONDITION = MaterialRules.biome(ModBiomes.ANCIENT_DESERT);
@@ -102,7 +102,7 @@ public class ModSurfaceRules {
                                         ),
                                         MaterialRules.condition(
                                             MaterialRules.noiseThreshold(NoiseParametersKeys.SURFACE, 0.4),
-                                            NILE_RIVER_THIN_GRASS // 25% chance for thin grass
+                                            NILE_RIVER_TALL_GRASS // 25% chance for thin grass
                                         ),
                                         FERTILE_SILT // 40% chance for fertile silt
                                     )
@@ -113,7 +113,7 @@ public class ModSurfaceRules {
                                     MaterialRules.sequence(
                                         MaterialRules.condition(
                                             MaterialRules.noiseThreshold(NoiseParametersKeys.SURFACE, 0.75),
-                                            NILE_RIVER_THIN_GRASS // 25% chance for thin grass
+                                            NILE_RIVER_TALL_GRASS // 25% chance for thin grass
                                         ),
                                         FERTILE_SILT // 75% chance for fertile silt
                                     )
