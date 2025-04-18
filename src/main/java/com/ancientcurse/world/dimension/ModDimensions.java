@@ -25,6 +25,9 @@ public class ModDimensions {
      * Registers the dimension using our custom dimension type.
      */
     public static void register() {
+        AncientCurse.LOGGER.info("Custom dimensions disabled - using vanilla Minecraft dimensions only");
+        
+        /*
         AncientCurse.LOGGER.info("Registering Ancient Curse dimension using custom dimension type");
         
         // Check if dimension JSON file exists
@@ -66,5 +69,6 @@ public class ModDimensions {
         });
         
         AncientCurse.LOGGER.info("Ancient Curse dimensions registration complete");
+        */
     }
 } 

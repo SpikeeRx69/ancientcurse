@@ -7,24 +7,18 @@ import net.minecraft.util.Identifier;
 import net.minecraft.world.biome.Biome;
 
 /**
- * Defines biome registry keys and handles biome registration.
+ * Template for biome registration that can be implemented later.
+ * Currently using vanilla Minecraft biomes.
  */
 public class ModBiomes {
-    
-    // Define biome registry keys
-    public static final RegistryKey<Biome> ANCIENT_DESERT = RegistryKey.of(
-            RegistryKeys.BIOME, new Identifier(AncientCurse.MOD_ID, "ancient_desert"));
-    
-    public static final RegistryKey<Biome> NILE_RIVER = RegistryKey.of(
-            RegistryKeys.BIOME, new Identifier(AncientCurse.MOD_ID, "nile_river"));
     
     /**
      * Register biomes
      */
     public static void registerBiomes() {
-        AncientCurse.LOGGER.info("Registering biomes for " + AncientCurse.MOD_ID);
+        AncientCurse.LOGGER.info("Custom biomes disabled - using vanilla Minecraft biomes");
         
-        // Biomes are defined through JSON files in data/ancientcurse/worldgen/biome/
-        // This method is just for logging and any programmatic registration if needed
+        // Biome registration is disabled.
+        // You can implement this method to register custom biomes later.
     }
 } 

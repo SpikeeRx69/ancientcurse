@@ -77,25 +77,28 @@ public class AncientCurse implements ModInitializer {
      * Registers all world generation components
      */
     private void registerWorldgenComponents() {
-        // Register biomes first
-        ModBiomes.registerBiomes();
+        // Comment out biome-related code to revert to vanilla generation
+        // ModBiomes.registerBiomes();
         
-        // Register dimension types and dimensions
-        ModDimensions.register();
+        // Comment out dimension registration
+        // ModDimensions.register();
         
-        // Register world presets
-        ModWorldPresets.register();
+        // Comment out world presets
+        // ModWorldPresets.register();
         
-        // Register additional worldgen components after server starts
+        // Disable custom surface rules and biome modifiers
         ServerLifecycleEvents.SERVER_STARTING.register(server -> {
-            // Register custom surface rules
-            ModSurfaceRuleRegistration.register();
+            // Comment out surface rule registration
+            // ModSurfaceRuleRegistration.register();
             
-            // Register biome modifiers to ensure custom blocks are used
-            BiomeModifier.register();
+            // Comment out biome modifiers
+            // BiomeModifier.register();
             
-            // Initialize world generation with compatibility handling
-            AncientWorldGeneration.init();
+            // Initialize world generation with compatibility handling but skip custom biome code
+            // AncientWorldGeneration.init();
+            
+            // Log that we're using vanilla generation
+            LOGGER.info("Using vanilla Minecraft world generation (custom biomes disabled)");
         });
     }
 }

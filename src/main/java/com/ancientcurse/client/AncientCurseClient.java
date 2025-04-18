@@ -30,9 +30,8 @@ public class AncientCurseClient implements ClientModInitializer {
      */
     private void registerRenderLayers() {
         // Register cutout render layers for blocks with transparency
-        BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.NILE_RIVER_TALL_GRASS, RenderLayer.getCutout());
         
-        // Add other vegetation blocks with transparency here as needed
+        // Add vegetation blocks with transparency here as needed
         BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.NILE_RIVER_GRASS, RenderLayer.getCutout());
         BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.PAPYRUS_REED, RenderLayer.getCutout());
         BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.DEAD_PAPYRUS_REED, RenderLayer.getCutout());
@@ -43,5 +42,7 @@ public class AncientCurseClient implements ClientModInitializer {
         BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.MINI_CACTUS, RenderLayer.getCutout());
         BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.PISTIA_STRATIOTES, RenderLayer.getCutout());
         BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.LOTUS_FLOWER_PAD, RenderLayer.getCutout());
+        
+        // Note: NILE_RIVER_TALL_GRASS removed to fix compilation issues
     }
 }
