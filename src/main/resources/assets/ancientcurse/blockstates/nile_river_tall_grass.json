@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "half=lower": {
+      "model": "ancientcurse:block/nile_river_tall_grass_bottom"
+    },
+    "half=upper": {
+      "model": "ancientcurse:block/nile_river_tall_grass_top"
+    }
+  }
+} 

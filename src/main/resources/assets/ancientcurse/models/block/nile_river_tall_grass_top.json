@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cross",
+  "textures": {
+    "cross": "ancientcurse:block/nile_river_tall_grass_top"
+  }
+} 

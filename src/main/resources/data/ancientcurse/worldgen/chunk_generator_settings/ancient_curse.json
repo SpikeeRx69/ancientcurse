@@ -4,7 +4,6 @@
   "surface_rule": {
     "type": "minecraft:sequence",
     "sequence": [
-      // 1. Bedrock
       {
         "type": "minecraft:condition",
         "if_true": {
@@ -17,95 +16,7 @@
           "type": "minecraft:block",
           "result_state": { "Name": "minecraft:bedrock" }
         }
-      },
-      // 2. Nile River Biome Rules
-      {
-        "type": "minecraft:condition",
-        "if_true": {
-          "type": "minecraft:biome",
-          "biome_is": "ancientcurse:nile_river"
-        },
-        "then_run": {
-          "type": "minecraft:sequence",
-          "sequence": [
-            // Underwater Floor
-            {
-              "type": "minecraft:condition",
-              "if_true": { 
-                "type": "minecraft:water",
-                "offset": -1,
-                "surface_depth_multiplier": 0 
-              },
-              "then_run": {
-                 "type": "minecraft:condition",
-                 "if_true": { "type": "minecraft:surface" },
-                 "then_run": { 
-                    "type": "minecraft:block", 
-                    "result_state": { "Name": "ancientcurse:riverbed" }
-                 }
-              }
-            },
-            // Land Surface & Subsurface
-            {
-              "type": "minecraft:condition",
-              "if_true": { 
-                 "type": "minecraft:not",
-                 "invert": { "type": "minecraft:water", "offset": 0, "surface_depth_multiplier": 0 }
-              },
-              "then_run": {
-                "type": "minecraft:sequence",
-                "sequence": [
-                  { // Top Layer
-                    "type": "minecraft:condition",
-                    "if_true": { "type": "minecraft:surface" },
-                    "then_run": { "type": "minecraft:block", "result_state": { "Name": "ancientcurse:fertile_nile_silt" } }
-                  },
-                  { // 1-4 Below: Fertile Silt
-                    "type": "minecraft:condition",
-                    "if_true": { "type": "minecraft:stone_depth", "offset": 1, "secondary_depth_range": 4, "surface_type": "floor" },
-                    "then_run": { "type": "minecraft:block", "result_state": { "Name": "ancientcurse:fertile_nile_silt" } }
-                  },
-                   { // 5-8 Below: Dry Silt
-                    "type": "minecraft:condition",
-                    "if_true": { "type": "minecraft:stone_depth", "offset": 5, "secondary_depth_range": 4, "surface_type": "floor" },
-                    "then_run": { "type": "minecraft:block", "result_state": { "Name": "ancientcurse:dry_nile_silt" } }
-                  },
-                  { // 9-12 Below: Sandstone
-                    "type": "minecraft:condition",
-                    "if_true": { "type": "minecraft:stone_depth", "offset": 9, "secondary_depth_range": 4, "surface_type": "floor" },
-                    "then_run": { "type": "minecraft:block", "result_state": { "Name": "minecraft:sandstone" } }
-                  }
-                ]
-              }
-            }
-          ]
-        }
-      },
-      // 3. Default Stone/Deepslate fill (Simplified Vanilla)
-      {
-        "type": "minecraft:condition",
-        "if_true": {
-            "type": "minecraft:vertical_gradient",
-            "random_name": "deepslate",
-            "true_at_and_below": { "absolute": 0 },
-            "false_at_and_above": { "absolute": 8 }
-        },
-        "then_run": {
-          "type": "minecraft:block",
-          "result_state": { "Name": "minecraft:deepslate" }
-        }
-      },
-      {
-        "type": "minecraft:block",
-        "result_state": { "Name": "minecraft:stone" }
       }
     ]
-  },
-  "default_block": { "Name": "minecraft:stone" },
-  "default_fluid": { "Name": "minecraft:water", "Properties": { "level": "0" } },
-  "sea_level": 63,
-  "mob_generation_type": "minecraft:default",
-  "aquifers_enabled": true,
-  "ore_veins_enabled": true,
-  "legacy_random_source": false
-} 
+  }
+}
