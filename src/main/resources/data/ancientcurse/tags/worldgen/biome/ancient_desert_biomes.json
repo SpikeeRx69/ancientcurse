@@ -1,6 +1,7 @@
 {
   "replace": false,
   "values": [
-    "ancientcurse:ancient_desert"
+    "minecraft:desert",
+    "minecraft:badlands"
   ]
 } 
