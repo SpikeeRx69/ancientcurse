@@ -2,10 +2,14 @@ package com.ancientcurse.client;
 
 import com.ancientcurse.AncientCurse;
 import com.ancientcurse.ModBlocks;
+import com.ancientcurse.block.RockBlock;
+import com.ancientcurse.client.color.RockColorProvider;
 import net.fabricmc.api.ClientModInitializer;
 import net.fabricmc.api.EnvType;
 import net.fabricmc.api.Environment;
 import net.fabricmc.fabric.api.blockrenderlayer.v1.BlockRenderLayerMap;
+import net.fabricmc.fabric.api.client.rendering.v1.ColorProviderRegistry;
+import net.minecraft.block.Block;
 import net.minecraft.client.render.RenderLayer;
 
 /**
@@ -21,6 +25,9 @@ public class AncientCurseClient implements ClientModInitializer {
         
         // Register render layers for transparent blocks
         registerRenderLayers();
+        
+        // Register color providers
+        registerColorProviders();
         
         AncientCurse.LOGGER.info("Ancient Curse Client initialized");
     }
@@ -44,5 +51,27 @@ public class AncientCurseClient implements ClientModInitializer {
         BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.LOTUS_FLOWER_PAD, RenderLayer.getCutout());
         
         // Note: NILE_RIVER_TALL_GRASS removed to fix compilation issues
+    }
+    
+    /**
+     * Register color providers for blocks that need dynamic coloring
+     */
+    private void registerColorProviders() {
+        // Create color provider instances
+        RockColorProvider rockColorProvider = new RockColorProvider();
+        
+        // Register block color providers
+        ColorProviderRegistry.BLOCK.register(rockColorProvider, 
+            ModBlocks.SMALL_ROCK, 
+            ModBlocks.MEDIUM_ROCK,
+            ModBlocks.LARGE_ROCK
+        );
+        
+        // Register item color providers
+        ColorProviderRegistry.ITEM.register(rockColorProvider,
+            ModBlocks.SMALL_ROCK,
+            ModBlocks.MEDIUM_ROCK,
+            ModBlocks.LARGE_ROCK
+        );
     }
 }
