@@ -27,6 +27,10 @@ import com.ancientcurse.block.LightDeadFernBlock;
 import com.ancientcurse.block.MiniCactusBlock;
 import com.ancientcurse.block.PistiaStratiotesBlock;
 import com.ancientcurse.block.OfferingPotBlock;
+import com.ancientcurse.block.VesselOfWhisperingWindsBlock;
+import com.ancientcurse.block.CanopicUrnOfBastetBlock;
+import com.ancientcurse.block.ScarabSealedUrnBlock;
+import com.ancientcurse.block.PharaohsIncenseJarBlock;
 import com.ancientcurse.block.NileRiverTallGrassBlock;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
@@ -499,10 +503,39 @@ public class ModBlocks {
     public static final Block MINI_CACTUS = new MiniCactusBlock(
         FabricBlockSettings.create()
             .mapColor(MapColor.DARK_GREEN)
-            .strength(0.4f)
+            .strength(0.3f)
             .sounds(BlockSoundGroup.GRASS)
             .nonOpaque()
             .notSolid()
+    );
+    
+    // Canopic Urn of Bastet - a ceremonial container with glowing eyes
+    public static final Block CANOPIC_URN_OF_BASTET = new CanopicUrnOfBastetBlock(
+        FabricBlockSettings.create()
+            .mapColor(MapColor.TERRACOTTA_GRAY)
+            .strength(1.5f)
+            .sounds(BlockSoundGroup.STONE)
+            .nonOpaque()
+            .luminance(state -> 5) // Soft glow from the eyes
+    );
+    
+    // Scarab Sealed Urn - a ceremonial container sealed with a sacred scarab
+    public static final Block SCARAB_SEALED_URN = new ScarabSealedUrnBlock(
+        FabricBlockSettings.create()
+            .mapColor(MapColor.TERRACOTTA_GRAY)
+            .strength(1.5f)
+            .sounds(BlockSoundGroup.STONE)
+            .nonOpaque()
+    );
+    
+    // Pharaoh's Incense Jar - a ceremonial container for burning sacred incense
+    public static final Block PHARAOHS_INCENSE_JAR = new PharaohsIncenseJarBlock(
+        FabricBlockSettings.create()
+            .mapColor(MapColor.TERRACOTTA_GRAY)
+            .strength(1.5f)
+            .sounds(BlockSoundGroup.STONE)
+            .nonOpaque()
+            .luminance(state -> 4) // Soft glow from the incense
     );
 
     // Pistia Stratiotes - water lettuce, floats on water
@@ -535,6 +568,16 @@ public class ModBlocks {
             .luminance(state -> state.get(ClayCrucibleBlock.LIT) ? 13 : 0) // Glow when lit
             .sounds(BlockSoundGroup.STONE)
             .nonOpaque()
+    );
+    
+    // Vessel of Whispering Winds - a mystical pottery item that glows
+    public static final Block VESSEL_OF_WHISPERING_WINDS = new VesselOfWhisperingWindsBlock(
+        FabricBlockSettings.create()
+            .mapColor(MapColor.TERRACOTTA_GRAY)
+            .strength(1.5f)
+            .sounds(BlockSoundGroup.STONE)
+            .nonOpaque()
+            .luminance(state -> 8) // Constant light level of 8
     );
     
     // Black stone variants
@@ -586,12 +629,48 @@ public class ModBlocks {
             .sounds(BlockSoundGroup.DEEPSLATE)
     );
     
+    // Wind Swept Blackstone - worn, smooth black stone
     public static final Block WIND_SWEPT_BLACKSTONE = new Block(
         FabricBlockSettings.create()
             .mapColor(MapColor.BLACK)
             .strength(1.5f, 6.0f)
             .requiresTool()
             .sounds(BlockSoundGroup.STONE)
+    );
+    
+    // Bronze Blocks
+    public static final Block BRONZE_BLOCK = new Block(
+        FabricBlockSettings.create()
+            .mapColor(MapColor.TERRACOTTA_ORANGE)
+            .strength(3.0f, 6.0f)
+            .requiresTool()
+            .sounds(BlockSoundGroup.METAL)
+    );
+    
+    public static final Block BRONZE_PLATE = new Block(
+        FabricBlockSettings.create()
+            .mapColor(MapColor.TERRACOTTA_ORANGE)
+            .strength(2.5f, 6.0f)
+            .requiresTool()
+            .sounds(BlockSoundGroup.METAL)
+            .nonOpaque()
+    );
+    
+    public static final Block CHISELED_BRONZE = new Block(
+        FabricBlockSettings.create()
+            .mapColor(MapColor.TERRACOTTA_ORANGE)
+            .strength(3.0f, 6.0f)
+            .requiresTool()
+            .sounds(BlockSoundGroup.METAL)
+    );
+    
+    public static final Block BRONZE_GRATE = new Block(
+        FabricBlockSettings.create()
+            .mapColor(MapColor.TERRACOTTA_ORANGE)
+            .strength(2.5f, 6.0f)
+            .requiresTool()
+            .sounds(BlockSoundGroup.METAL)
+            .nonOpaque()
     );
 
     /**
@@ -971,6 +1050,34 @@ public class ModBlocks {
             CLAY_CRUCIBLE
         );
         
+        // Register Vessel of Whispering Winds
+        Registry.register(
+            Registries.BLOCK,
+            new Identifier(AncientCurse.MOD_ID, "vessel_of_whispering_winds"),
+            VESSEL_OF_WHISPERING_WINDS
+        );
+        
+        // Register Canopic Urn of Bastet
+        Registry.register(
+            Registries.BLOCK,
+            new Identifier(AncientCurse.MOD_ID, "canopic_urn_of_bastet"),
+            CANOPIC_URN_OF_BASTET
+        );
+        
+        // Register Scarab Sealed Urn
+        Registry.register(
+            Registries.BLOCK,
+            new Identifier(AncientCurse.MOD_ID, "scarab_sealed_urn"),
+            SCARAB_SEALED_URN
+        );
+        
+        // Register Pharaoh's Incense Jar
+        Registry.register(
+            Registries.BLOCK,
+            new Identifier(AncientCurse.MOD_ID, "pharaohs_incense_jar"),
+            PHARAOHS_INCENSE_JAR
+        );
+        
         // Register Black Cobblestone
         Registry.register(
             Registries.BLOCK,
@@ -1018,6 +1125,31 @@ public class ModBlocks {
             Registries.BLOCK,
             new Identifier(AncientCurse.MOD_ID, "wind_swept_blackstone"),
             WIND_SWEPT_BLACKSTONE
+        );
+        
+        // Register Bronze Blocks
+        Registry.register(
+            Registries.BLOCK,
+            new Identifier(AncientCurse.MOD_ID, "bronze_block"),
+            BRONZE_BLOCK
+        );
+        
+        Registry.register(
+            Registries.BLOCK,
+            new Identifier(AncientCurse.MOD_ID, "bronze_plate"),
+            BRONZE_PLATE
+        );
+        
+        Registry.register(
+            Registries.BLOCK,
+            new Identifier(AncientCurse.MOD_ID, "chiseled_bronze"),
+            CHISELED_BRONZE
+        );
+        
+        Registry.register(
+            Registries.BLOCK,
+            new Identifier(AncientCurse.MOD_ID, "bronze_grate"),
+            BRONZE_GRATE
         );
         
         // Register block items
@@ -1081,8 +1213,10 @@ public class ModBlocks {
         registerBlockItem(PISTIA_STRATIOTES, ModItemGroup.ANCIENT_CURSE);
         registerBlockItem(OFFERING_POT, ModItemGroup.ANCIENT_CURSE);
         registerBlockItem(CLAY_CRUCIBLE, ModItemGroup.ANCIENT_CURSE);
-        
-        // Register black stone variants
+        registerBlockItem(VESSEL_OF_WHISPERING_WINDS, ModItemGroup.ANCIENT_CURSE);
+        registerBlockItem(CANOPIC_URN_OF_BASTET, ModItemGroup.ANCIENT_CURSE);
+        registerBlockItem(SCARAB_SEALED_URN, ModItemGroup.ANCIENT_CURSE);
+        registerBlockItem(PHARAOHS_INCENSE_JAR, ModItemGroup.ANCIENT_CURSE);
         registerBlockItem(BLACK_COBBLESTONE, ModItemGroup.ANCIENT_CURSE);
         registerBlockItem(BLACK_DUST, ModItemGroup.ANCIENT_CURSE);
         registerBlockItem(BLACK_SAND, ModItemGroup.ANCIENT_CURSE);
@@ -1090,6 +1224,12 @@ public class ModBlocks {
         registerBlockItem(BLACKSTONE_BRICK, ModItemGroup.ANCIENT_CURSE);
         registerBlockItem(HARDENED_BLACK_STONE, ModItemGroup.ANCIENT_CURSE);
         registerBlockItem(WIND_SWEPT_BLACKSTONE, ModItemGroup.ANCIENT_CURSE);
+        
+        // Register Bronze Blocks
+        registerBlockItem(BRONZE_BLOCK, ModItemGroup.ANCIENT_CURSE);
+        registerBlockItem(BRONZE_PLATE, ModItemGroup.ANCIENT_CURSE);
+        registerBlockItem(CHISELED_BRONZE, ModItemGroup.ANCIENT_CURSE);
+        registerBlockItem(BRONZE_GRATE, ModItemGroup.ANCIENT_CURSE);
         
         // We don't register a BlockItem for DATE_BLOCK since it should only drop the Sekhem Date item
     }

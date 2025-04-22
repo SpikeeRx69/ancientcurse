@@ -81,6 +81,25 @@ public class ModItems {
     
     // Define Rope item - crafting material
     public static final Item ROPE = new Item(new FabricItemSettings());
+    
+    // Bronze materials
+    public static final Item BRONZE_BLEND = new Item(new FabricItemSettings());
+    public static final Item RAW_BRONZE_NUGGET = new Item(new FabricItemSettings());
+    public static final Item BRONZE_INGOT = new Item(new FabricItemSettings());
+    public static final Item BRONZE_NUGGET = new Item(new FabricItemSettings());
+    
+    // Bronze tools
+    public static final Item BRONZE_SWORD = new Item(new FabricItemSettings());
+    public static final Item BRONZE_PICKAXE = new Item(new FabricItemSettings());
+    public static final Item BRONZE_AXE = new Item(new FabricItemSettings());
+    public static final Item BRONZE_SHOVEL = new Item(new FabricItemSettings());
+    public static final Item BRONZE_HOE = new Item(new FabricItemSettings());
+    
+    // Bronze armor
+    public static final Item BRONZE_HELMET = new Item(new FabricItemSettings());
+    public static final Item BRONZE_CHESTPLATE = new Item(new FabricItemSettings());
+    public static final Item BRONZE_LEGGINGS = new Item(new FabricItemSettings());
+    public static final Item BRONZE_BOOTS = new Item(new FabricItemSettings());
 
     /**
      * Registers all mod items
@@ -173,6 +192,77 @@ public class ModItems {
             Registries.ITEM,
             new Identifier(AncientCurse.MOD_ID, "rope"),
             ROPE
+        );
+        
+        // Register Bronze materials
+        Registry.register(
+            Registries.ITEM,
+            new Identifier(AncientCurse.MOD_ID, "bronze_blend"),
+            BRONZE_BLEND
+        );
+        Registry.register(
+            Registries.ITEM,
+            new Identifier(AncientCurse.MOD_ID, "raw_bronze_nugget"),
+            RAW_BRONZE_NUGGET
+        );
+        Registry.register(
+            Registries.ITEM,
+            new Identifier(AncientCurse.MOD_ID, "bronze_ingot"),
+            BRONZE_INGOT
+        );
+        Registry.register(
+            Registries.ITEM,
+            new Identifier(AncientCurse.MOD_ID, "bronze_nugget"),
+            BRONZE_NUGGET
+        );
+        
+        // Register Bronze tools
+        Registry.register(
+            Registries.ITEM,
+            new Identifier(AncientCurse.MOD_ID, "bronze_sword"),
+            BRONZE_SWORD
+        );
+        Registry.register(
+            Registries.ITEM,
+            new Identifier(AncientCurse.MOD_ID, "bronze_pickaxe"),
+            BRONZE_PICKAXE
+        );
+        Registry.register(
+            Registries.ITEM,
+            new Identifier(AncientCurse.MOD_ID, "bronze_axe"),
+            BRONZE_AXE
+        );
+        Registry.register(
+            Registries.ITEM,
+            new Identifier(AncientCurse.MOD_ID, "bronze_shovel"),
+            BRONZE_SHOVEL
+        );
+        Registry.register(
+            Registries.ITEM,
+            new Identifier(AncientCurse.MOD_ID, "bronze_hoe"),
+            BRONZE_HOE
+        );
+        
+        // Register Bronze armor
+        Registry.register(
+            Registries.ITEM,
+            new Identifier(AncientCurse.MOD_ID, "bronze_helmet"),
+            BRONZE_HELMET
+        );
+        Registry.register(
+            Registries.ITEM,
+            new Identifier(AncientCurse.MOD_ID, "bronze_chestplate"),
+            BRONZE_CHESTPLATE
+        );
+        Registry.register(
+            Registries.ITEM,
+            new Identifier(AncientCurse.MOD_ID, "bronze_leggings"),
+            BRONZE_LEGGINGS
+        );
+        Registry.register(
+            Registries.ITEM,
+            new Identifier(AncientCurse.MOD_ID, "bronze_boots"),
+            BRONZE_BOOTS
         );
     }
 }

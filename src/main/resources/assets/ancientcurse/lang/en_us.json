@@ -13,6 +13,22 @@
   "item.ancientcurse.spinach": "Spinach",
   "item.ancientcurse.rope": "Rope",
   
+  "item.ancientcurse.bronze_blend": "Bronze Blend",
+  "item.ancientcurse.raw_bronze_nugget": "Raw Bronze Nugget",
+  "item.ancientcurse.bronze_ingot": "Bronze Ingot",
+  "item.ancientcurse.bronze_nugget": "Bronze Nugget",
+  
+  "item.ancientcurse.bronze_sword": "Bronze Khopesh",
+  "item.ancientcurse.bronze_pickaxe": "Bronze Pickaxe",
+  "item.ancientcurse.bronze_axe": "Bronze Ceremonial Axe",
+  "item.ancientcurse.bronze_shovel": "Bronze Shovel",
+  "item.ancientcurse.bronze_hoe": "Bronze Hoe",
+  
+  "item.ancientcurse.bronze_helmet": "Bronze Helmet",
+  "item.ancientcurse.bronze_chestplate": "Bronze Chestplate",
+  "item.ancientcurse.bronze_leggings": "Bronze Leggings",
+  "item.ancientcurse.bronze_boots": "Bronze Sandals",
+  
   "block.ancientcurse.sycamore_fig_log": "Sycamore Fig Log",
   "block.ancientcurse.sycamore_leaves": "Sycamore Leaves",
   "block.ancientcurse.date_palm_log": "Date Palm Log",
@@ -61,11 +77,17 @@
   "block.ancientcurse.polished_deshret_stone": "Polished Deshret Stone",
   "block.ancientcurse.spotted_deshret": "Spotted Deshret",
   
+  "block.ancientcurse.bronze_block": "Bronze Block",
+  "block.ancientcurse.bronze_plate": "Bronze Plate",
+  "block.ancientcurse.chiseled_bronze": "Chiseled Bronze",
+  "block.ancientcurse.bronze_grate": "Bronze Grate",
+  
   "block.ancientcurse.small_rock": "Small Rock",
   "block.ancientcurse.medium_rock": "Medium Rock",
   "block.ancientcurse.large_rock": "Large Rock",
   "block.ancientcurse.clay_crucible": "Clay Crucible",
   "block.ancientcurse.offering_pot": "Ancient Offering Pot",
+  "block.ancientcurse.vessel_of_whispering_winds": "Vessel of Whispering Winds",
   "block.ancientcurse.black_cobblestone": "Black Cobblestone",
   "block.ancientcurse.black_dust": "Black Dust",
   "block.ancientcurse.black_sand": "Black Sand",

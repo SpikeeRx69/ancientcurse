@@ -66,6 +66,7 @@ public class ModItemGroup {
                 safeAdd(entries, ModBlocks.MUD_BRICK);
                 safeAdd(entries, ModBlocks.SUNBAKED_CLAY);
                 safeAdd(entries, ModBlocks.OFFERING_POT);
+                safeAdd(entries, ModBlocks.VESSEL_OF_WHISPERING_WINDS);
                 
                 // Plants and vegetation
                 safeAdd(entries, ModBlocks.LIGHT_NILE_MARSH);
@@ -83,6 +84,31 @@ public class ModItemGroup {
                 safeAdd(entries, ModBlocks.MINI_CACTUS);
                 safeAdd(entries, ModBlocks.PISTIA_STRATIOTES);
                 safeAdd(entries, ModBlocks.LOTUS_FLOWER_PAD);
+                
+                // Bronze Materials
+                safeAdd(entries, ModItems.BRONZE_BLEND);
+                safeAdd(entries, ModItems.RAW_BRONZE_NUGGET);
+                safeAdd(entries, ModItems.BRONZE_INGOT);
+                safeAdd(entries, ModItems.BRONZE_NUGGET);
+                
+                // Bronze Blocks
+                safeAdd(entries, ModBlocks.BRONZE_BLOCK);
+                safeAdd(entries, ModBlocks.BRONZE_PLATE);
+                safeAdd(entries, ModBlocks.CHISELED_BRONZE);
+                safeAdd(entries, ModBlocks.BRONZE_GRATE);
+                
+                // Bronze Tools
+                safeAdd(entries, ModItems.BRONZE_SWORD);
+                safeAdd(entries, ModItems.BRONZE_PICKAXE);
+                safeAdd(entries, ModItems.BRONZE_AXE);
+                safeAdd(entries, ModItems.BRONZE_SHOVEL);
+                safeAdd(entries, ModItems.BRONZE_HOE);
+                
+                // Bronze Armor
+                safeAdd(entries, ModItems.BRONZE_HELMET);
+                safeAdd(entries, ModItems.BRONZE_CHESTPLATE);
+                safeAdd(entries, ModItems.BRONZE_LEGGINGS);
+                safeAdd(entries, ModItems.BRONZE_BOOTS);
                 
                 // Crops (Blocks themselves, for placing if needed)
                 safeAdd(entries, ModBlocks.FLAX);
